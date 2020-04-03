@@ -22,7 +22,7 @@ You can find the role variables in var folder:
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Including an example of how to use your role, the variables will be in the vars folder.
 
 <pre>- name: Download SQL Server 2016
    hosts: windows
