@@ -99,21 +99,21 @@ SQLTEMPDBLOGFILESIZE="1024"
 SQLTEMPDBLOGFILEGROWTH="64"
 
 ; The Database Engine root data directory. 
-INSTALLSQLDATADIR="{{installation_path}}"
+INSTALLSQLDATADIR="{{ installation_path }}"
 
 ; Default directory for the Database Engine backup files. 
-SQLBACKUPDIR="{{installation_path}}\Backup"
+SQLBACKUPDIR="{{ installation_path }}\Backup"
 
 ; Default directory for the Database Engine user databases. 
-SQLUSERDBDIR="{{installation_path}}\Data"
+SQLUSERDBDIR="{{ installation_path }}\Data"
 
 ; Default directory for the Database Engine user database log files. 
-SQLUSERDBLOGDIR="{{installation_path}}\Log"
+SQLUSERDBLOGDIR="{{ installation_path }}\Log"
 
 ; Directories for Database Engine TempDB files. 
-SQLTEMPDBDIR="{{installation_path}}\TempDB"
+SQLTEMPDBDIR="{{ installation_path }}\TempDB"
 
 ; Directories for Database Engine TempDB log files. 
-SQLTEMPDBLOGDIR="{{installation_path}}/TempDB"
+SQLTEMPDBLOGDIR="{{ installation_path }}/TempDB"
 ; PS: yes, there is some debate as to whether your TempDB logs should go with your user DB logs, or with your TempDB data;
 ; I'm inclined to say the latter, because I like to use locally attached NVMe/M.2 flash storage specifically for it. But, YMMV.
