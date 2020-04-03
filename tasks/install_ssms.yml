@@ -1,0 +1,17 @@
+---
+- name: Installs SSMS
+  win_package:
+    path: "{{ download_path }}/ssmsfullsetup.exe"
+    arguments: '/install /quiet'
+    product_id: "{98D7AA09-44E1-4469-AB34-BFDC9A6890DD}"
+  register: ssms_installation
+
+- name: Add to path
+  win_path:
+    elements:
+      - 'C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE'
+    state: present
+
+- name: Reboot server
+  win_reboot:
+  when: ssms_installation.reboot_required

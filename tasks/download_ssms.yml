@@ -1,0 +1,6 @@
+---
+- name: Downloads SSMS
+  win_get_url:
+    url: "https://aka.ms/ssmsfullsetup"
+    dest: "{{ download_path }}/ssmsfullsetup.exe"
+  when: 

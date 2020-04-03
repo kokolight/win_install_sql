@@ -1,0 +1,5 @@
+---
+- name: check downloaded file exists
+  win_stat:
+     path: "{{ download_path }}/sql_installer.exe"
+  register: installer_file

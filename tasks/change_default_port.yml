@@ -1,0 +1,7 @@
+- name: Add or update registry for ip port
+  win_regedit:
+    path: 'HKLM:\Software\Microsoft\Microsoft SQL Server\MSSQL13.{{ sql_instance_name }}\MSSQLServer\SuperSock    etNetLib\Tcp\IPAll'
+    name: TcpPort
+    data: 1433
+  notifty: registry_changed
+

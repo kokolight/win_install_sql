@@ -1,0 +1,7 @@
+---
+# vars file for Install-MSSQL
+ssms_download_url: "https://aka.ms/ssmsfullsetup"
+mssql_download_url: "https://go.microsoft.com/fwlink/?LinkID=799011"
+installation_path: 'C:\SQL_2016'
+sql_instance_name: "{{ ansible_hostname }}"
+download_path: 'C:\Installs\'

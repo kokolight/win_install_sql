@@ -1,0 +1,5 @@
+---
+- name: create a directory for installer download
+  win_file:
+     path: "{{ installation_path }}"
+     state: directory

@@ -1,0 +1,8 @@
+---
+# handlers file for Install-MSSQL
+
+- name: registry_changed
+  win_service:
+    name: '{{ sql_instance_name }}'
+    force_dependant_service: yes
+    state: restarted

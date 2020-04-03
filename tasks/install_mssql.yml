@@ -1,0 +1,12 @@
+---
+- name: install mssql
+#  debug:
+  win_package:
+    path:  '{{ download_path }}\SQLServer.exe'
+    arguments:  '/ConfigurationFile={{installation_path}}\sql_conf.ini /IAcceptSQLServerLicenseTerms /Q'
+    product_id: '{0FDFF68C-E6E6-414E-AB66-B9AA896A5491}'
+  register: mssql_installation
+
+- name: Reboot server
+  win_reboot:
+  when: mssql_installation.reboot_required
