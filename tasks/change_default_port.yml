@@ -4,4 +4,3 @@
     name: TcpPort
     data: 1433
   notifty: registry_changed
-
