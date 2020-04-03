@@ -12,11 +12,11 @@ Role Variables
 --------------
 
 You can find the role variables in var folder
-ssms_download_url - The url of the SSMS download
-mssql_download_url - The url of the MSSQL download
-installation_path - The path to install the SQL to
-sql_instance_name - The name of the instance
-download_path - The path to download all files to
+* ssms_download_url - The url of the SSMS download
+* mssql_download_url - The url of the MSSQL download
+* installation_path - The path to install the SQL to
+* sql_instance_name - The name of the instance
+* download_path - The path to download all files to
 
 
 Example Playbook
@@ -28,7 +28,7 @@ Including an example of how to use your role (for instance, with variables passe
    hosts: windows
    tasks:
      - include_role:
-         name: Install-MSSQL</pre>
+         name: win_install_sql</pre>
 
 License
 -------
