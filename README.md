@@ -11,7 +11,7 @@ No prerequisits for this role.
 Role Variables
 --------------
 
-You can find the role variables in var folder
+You can find the role variables in var folder:
 * ssms_download_url - The url of the SSMS download
 * mssql_download_url - The url of the MSSQL download
 * installation_path - The path to install the SQL to
@@ -33,5 +33,5 @@ Including an example of how to use your role (for instance, with variables passe
 License
 -------
 
-MIT
+GNU Public license
 
