@@ -24,11 +24,11 @@ Example Playbook
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-`- name: Download SQL Server 2016
+<pre>- name: Download SQL Server 2016
    hosts: windows
    tasks:
      - include_role:
-         name: Install-MSSQL`
+         name: Install-MSSQL</pre>
 
 License
 -------
